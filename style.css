@@ -1,0 +1,101 @@
+/*Reset do CSS*/
+/*Asterisco seleciona todos os elementos do HTML*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f1f1;
+    padding: 40px 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*Seleção de multiplos seletores - uso da virgula como "E"*/
+header,
+nav,
+main,
+footer {
+    width: 100%;
+    background-color: rgb(12, 107, 0);
+    padding: 20px;
+    border-radius: 30px;
+}
+header h1 {
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+
+aside,
+article {
+    background-color: #ff9100;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+aside {
+    width: 30%;
+}
+
+article {
+    width: 60%;
+}
+
+section {
+    background-color: #000000;
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+address {
+    background-color: #65c40c6c;
+    padding: 20px;
+    border-radius: 30px;
+    width: 10%;
+}
+
+@media (max-width:600px) {
+    body {
+        background-color: blue;
+        padding: 10px 20px;
+    }
+}
+
+/*Desenvolva uma media query para os três tamanhos de imagem*/
+/*Pequeno  <= 600px*/
+/*Padrão  > 600px <1600px*/
+/*Grande  >= 1600px*/
+/*Cores de Background diferentes, Tamanho de fonte diferentes, Paddings diferentes*/
+}
+
+
+/*@media (min-width:600px) and (max-width:1600px) {
+    header, nav, main, footer {
+        background-color: rgb(255, 208, 0);
+        padding: 15px 30px;
+        font-size: medium;
+    }
+}
+
+@media (min-width:1600px) {
+    header, nav, main, footer {
+        background-color: rgb(27, 109, 2);
+        padding: 25px 50px;
+        font-size: larger;
+    }
+}
