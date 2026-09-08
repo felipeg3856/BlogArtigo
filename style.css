@@ -15,6 +15,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    margin: 10px;
 }
 
 header,
@@ -33,7 +34,6 @@ header h1 {
     color: #000000;
     text-align:center;
     font-style:italic;
-    padding: 1px
 }
 
 main {
@@ -93,4 +93,3 @@ address {
     border-radius: 30px;
     width: 10%;
 }
-
